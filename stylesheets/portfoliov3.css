@@ -1,0 +1,270 @@
+* {
+    font-family: 'Ubuntu';
+}
+.webdiv {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+body {
+    background-color: black;
+    height: 1500px;
+}
+
+
+.nav-panel{
+    display: block;
+   background-color: rgb(22, 21, 21);
+   height: 80px;
+}
+
+.nav-section {
+    background-color: rgb(22, 21, 21);
+    height: 70px;
+    color: white;
+    border: none;
+    transition: box-shadow 0.2s, background-color 0.4s;
+    width: 200px;
+    font-size: 15px;
+}
+
+.nav-section:hover {
+    box-shadow: 0px 0px 1px 1px rgb(46, 45, 45);
+    background-color: rgb(128, 124, 124);
+}
+
+
+#Home {
+    display: flex;
+    flex-direction: row;
+    height:1100px;
+}
+
+#Home > div {
+    display: inline-block;
+   
+   
+} 
+
+.home-right{
+    background-color: white;
+    height: 800px;
+    width: 800px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 30px;
+    
+    
+}
+
+.name, .description-about {
+    
+    margin-left: 20px;
+    margin-top: 100px;
+    line-height: 60px;
+}
+
+.name {
+    font-size: 80px;
+}
+
+.description-about {
+    font-size: 30px;
+    
+}
+
+.web-section {
+    background-color: rgba(249, 250, 251, 0.945);
+
+    height: 1800px;
+}
+ .web-section:not(#Home) {
+    display: none;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    
+    box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+    background-color: white;
+    transition: box-shadow 0.5s, background-color 0.5s;
+    border-radius: 10px;
+    
+}
+
+.project:hover {
+    box-shadow: 1px 1px 1px 4px rgb(194, 191, 191);
+    background-color: rgb(247, 241, 241);
+}
+
+
+.project > div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.projects-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 80px;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.project-desc{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+
+
+
+
+.works-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.work-title {
+    font-size: 30px;
+}
+
+.work-desc {
+    font-size: 20px;
+    line-height: 45px;
+}
+
+
+.work > div {
+    
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.work {
+  box-shadow: 0px 0.5px 1px 0.5px;
+  margin-right: 30px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  transition: background-color 0.5s;
+  border-radius: 10px;
+}
+
+.work:hover {
+    background-color: white;
+}
+img:not(.profile-pic) {
+    width: 600px;
+    height: 380px;
+    margin-top: 10px;
+    border-radius: 30%;
+}
+.profile-pic {
+    border-radius: 30%;
+    
+}
+
+
+#Skills{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#Skills > div {
+    text-align: center;
+ 
+}
+
+.skills-title {
+    font-size: 70px;
+}
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+   
+}
+
+.skills-list > div {
+   border: solid;
+   width: 250px;
+   height: 250px;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+   font-size: 35px;
+   box-shadow: 2px 2px 1px grey;
+   background-color: white;
+   border-radius: 10px;
+}
+
+
+.skills-list > div {
+    border: solid;
+    width: 250px;
+    height: 250px;
+     margin-right: 20px;
+     margin-top: 30px;
+     text-align: center;
+     vertical-align: middle;
+     line-height: 200px;
+    font-size: 35px;
+    box-shadow: 2px 2px 1px grey;
+    background-color: white;
+    transition: box-shadow 0.5s;
+ }
+
+
+ .skills-list > div:hover {
+    box-shadow: 8px 8px 2px grey;
+ }
+
+.Contact-title {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+
+.contact-section > div, .linkedin-url{
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+   margin-left: 530px;
+   margin-right: 30px;
+}
+

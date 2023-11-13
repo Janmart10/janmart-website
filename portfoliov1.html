@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Janmart's CV</title>
+    <link rel="stylesheet" href="stylesheets/portfoliov1.css">
+    
+    
+</head>
+
+<body>
+    <script>
+    
+        function onMouseOver(job) {
+            var jobs = document.getElementsByClassName("work");
+            for (i = 0; i < jobs.length; i++) {
+                
+                jobs[i].style.display = "none";
+                
+            
+            }
+            
+            document.getElementById(job).style.display ="block";
+
+        }
+
+        function test() {
+            document.getElementById("skill-test").style.display = "none";
+        }
+
+        function callAlert() {
+            alert();
+        }
+    </script>
+
+    <div class="intro">
+
+        <div class="cv-img">
+            <img src="imgs/ppex.jpg" class="profile-img">
+        </div>
+        <div class="cv-text">
+            <p class="cv-name">Janmart Tenedora</p>
+            <p class="cv-desc">Lagay mo ang mga descriotion dito kapag alam mo anong sasabihin dito</p>
+        </div>
+    </div>
+    <div class="skill-section">
+        <p class="title-skills">Skills</p>
+        <div class="skills" id="skill-test">
+
+            <div>C++</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Java</div>
+            <div>Javascript</div>
+            <div>Unix</div>
+            <div>Unreal Engine</div>
+        </div>
+    </div>
+    <div class="work-section">
+        <p class="title-work">Work Experience</p>
+        <div class="work-bar">
+            <button onmouseover="onMouseOver('IT Consultant')">IT Consultant</button>
+            <button onmouseover="onMouseOver('Programming Intern')">Programming Intern</button>
+            <button onmouseover="onMouseOver('Project Manager Intern')">Project Manager Intern</button>
+            <button onmouseover="onMouseOver('Letter Sorter')">Letter Sorter</button>
+
+            
+        </div>
+        <div class="work-exp">
+            <div class="work" id="IT Consultant"> IT Consultant
+
+                <div class="work-text"> &#x2022;Tested, deployed and documented proprietary software of Murex <br />
+                    &#x2022; Presentation of company interfaces and software to stakeholders <br />
+                    &#x2022; Designed automated workflows to process upstream <br /> and downstream information of
+                    client systems
+                </div>
+
+            </div>
+            <div class="work" id="Programming Intern">
+                Programming Intern
+               <div class="work-text">
+                &#x2022; Identified and solved GUI issues of application through debugging and modification of application code
+                &#x2022; Completed issues earlier than assigned deadline through time management and co-ordination with programming
+supervisor
+&#x2022; Developed documentation for sections of application code through Confluence and consistently produced
+reports for completed tasks
+               </div> 
+            
+            </div>
+            <div class="work" id="Project Manager Intern">Project Manager Intern
+                <div class="work-text">
+                    &#x2022; Ensured clients were satisfied through meetings with project stakeholders and consistent project updates using
+technical documents and visual presentations
+&#x2022; Completed project milestones within allocated time frame, utilizing project management tools such as a Gantts
+Chart
+&#x2022; Reduced project risks and ensured safety of project team through Project Risk Assessment forms
+
+                </div>
+
+            </div>
+            <div class="work" id="Letter Sorter">Letter Sorter
+                <div class="work-text">&#x2022; Managed and sorted high priority letters and packages to ensure successful delivery of items to customers</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        Projects
+    </div>
+</body>
+
+</html>

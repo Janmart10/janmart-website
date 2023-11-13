@@ -1,0 +1,55 @@
+ .intro {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .cv-img {
+    width: 800px;
+    
+ }
+
+ .profile-img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 50%;
+ }
+
+ .cv-text{
+    flex:1;
+    text-align: center;
+ }
+
+ .cv-name{
+    font-size: 100px;
+ }
+
+ .cv-desc {
+    font-size: 25px;
+ }
+
+ .title-skills, .title-work {
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+ .skills {
+    background-color: bisque;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    
+
+ }
+
+ .work {
+   display: none;
+ }
+
+ 
+
+ .projects {
+    background-color: brown;
+ }

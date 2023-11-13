@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/portfoliov3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&family=Roboto:wght@400;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script>
+        function onMouseOver(idType, section) {
+            var jobs;
+            if (section == "work") {
+                jobs = document.getElementsByClassName("work");
+            }
+            else if (section == "project") {
+                jobs = document.getElementsByClassName("project");
+
+
+            }
+
+
+            for (i = 0; i < jobs.length; i++) {
+                jobs[i].style.display = "none";
+            }
+            document.getElementById(idType).style.display = "block";
+
+
+        }
+
+
+        function onMouseClick(section) {
+            var sections = document.getElementsByClassName("web-section");
+
+
+
+            for (i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            if (section == 'Home') {
+                document.getElementById(section).style.display = "flex";
+            }
+            else {
+                document.getElementById(section).style.display = "block";
+            }
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="webdiv">
+        <div class=nav-panel>
+            <button class="nav-section" onclick="onMouseClick('Home')">Home</button>
+            <button class="nav-section" onclick="onMouseClick('Skills')">Skills</button>
+            <button class="nav-section" onclick="onMouseClick('WorkEx')">Work Experience</button>
+            <button class="nav-section" onclick="onMouseClick('Projects')">Projects</button>
+            <button class="nav-section" onclick="onMouseClick('Contact')">Contact</button>
+        </div>
+        <div class="web-sections">
+            <div class="web-section" id="Home">
+                <div class="home-left">
+                    <img src="imgs/Profile picture.jpg" class="profile-pic">
+                </div>
+                <div class="home-right">
+                    <div class="name">Janmart Tenedora</div>
+                    <div class="description-about">Mechanical and Mechatronics Engineering Graduate with a passion for
+                        programming and software
+                        projects.
+                        I have experience working at various companies raning from start up Web application companies
+                        such
+                        as Thinkun,
+                        to larger organisations such as Murex, that focus on developing software for the major banks.
+                    </div>
+                </div>
+            </div>
+            <div class="web-section" id="Skills">
+                <div class="skills-title">Skills</div>
+                <div class="skills-list">
+
+                    <div>C++</div>
+                    <div>HTML</div>
+                    <div>XML</div>
+                    <div>CSS</div>
+                    <div>Java</div>
+                    <div>Javascript</div>
+                    <div>Unix</div>
+                    <div>Unreal Engine</div>
+                    <div>OpenGl</div>
+                    <div>ROS</div>
+                    <div>AutoCAD</div>
+                    <div>Solidworks</div>
+                    <div>Excel</div>
+                    
+
+                </div>
+            </div>
+
+            <div class="web-section" id="WorkEx">
+                <div class="works-title">Work Experience</div>
+                <div class="work-section">
+                    <div class="work" id="IT Consultant">
+                        <div class="work-area">
+                            <div class="work-title">IT Consultant</div>
+                            <div class="work-desc">
+                                &#x2022;Tested, deployed and documented proprietary software of Murex <br />
+                                &#x2022; Presentation of company interfaces and software to stakeholders <br />
+                                &#x2022; Designed automated workflows to process upstream and downstream information
+                                ofclient systems
+                            </div>
+                        </div>
+                        <div class="IT-image">
+                            <img src="stylesheets/consult.jpg">
+                        </div>
+
+
+                    </div>
+                    <div class="work" id="Programming Intern">
+                        <div class="Programming-image">
+                            <img src="stylesheets/programmer.webp">
+                        </div>
+                        <div class="work-area">
+                            <div class="work-title">Programming Intern</div>
+                            <div class="work-desc">
+                                &#x2022; Identified and solved GUI issues of application through debugging and
+                                modification
+                                of application code <br />
+                                &#x2022; Completed issues earlier than assigned deadline through time management and
+                                co-ordination with programming supervisor <br />
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="work" id="Project Management Intern">
+
+                        <div class="work-area">
+                            <div class="work-title">Project Management Intern</div>
+                            <div class="work-desc">
+                                &#x2022; Ensured clients were satisfied through meetings with project stakeholders and
+                                consistent project updates using technical documents and visual presentations <br />
+                                &#x2022; Completed project milestones within allocated time frame, utilizing project
+                                management tools such as a Gantts Chart <br />
+                                &#x2022; Reduced project risks and ensured safety of project team through Project Risk
+                                Assessment forms <br />
+                            </div>
+
+                        </div>
+                        <div class="IT-image">
+                            <img src="stylesheets/projectmanagement.PNG">
+                        </div>
+
+
+                    </div>
+                    <div class="work" id="Letter Sorter">
+                        <div class="Letter-image">
+                            <img src="stylesheets/letters.jpg">
+                        </div>
+                        <div class="work-area">
+                            <div class="work-title">Letter Sorter</div>
+                            <div class="work-desc">
+                                &#x2022; Managed and sorted high priority letters and packages to ensure successful
+                                delivery
+                                of items to customers
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="web-section" id="Projects">
+                <div class="projects-title">Projects</div>
+                <div class="projects-section">
+                    <div class="project" id="Search and Rescue Robot">
+                        <div class="project-title">Search and Rescue Robot</div>
+                        <div class="project-desc"> &#x2022;Programmed pre-built robot to navigate and explore maze <br/>
+                            &#x2022; Developed the navigation system of a robot using the C programming language and interfacing with the robot’s interface  <br/>
+                            &#x2022; Co-ordinated with team members and reached 3rd place in the competition <br/>
+                        </div>
+
+                    </div>
+                    <div class="project" id="CV Website">
+                        <div class="project-title">CV Website</div>
+                        <div class="project-desc">
+                            &#x2022; Created a website representation of CV using html <br/>
+                            &#x2022; The website was designed uisng a mixture of CSS for styling and Javascript for functionality <br/>
+
+
+                        </div>
+                    </div>
+                    <div class="project" id="Wheelchair Simulation">
+                        <div class="project-title">Wheelchair Simulation</div>
+                        <div class="project-desc"> &#x2022;Implemented a wheelchair interface into CARLA (Car Simulation) <br/>
+                            &#x2022; Created a pipeline between CARLA and ROS allowing the collection of real-time data <br/>
+                        </div>
+
+                    </div>
+                    <div class="project" id="3D Object Renderer">
+                        <div class="project-title">3D Object Renderer</div>
+                        <div class="project-desc">&#x2022;Developed a multi-threaded program which, could render 3D objects
+                            such as a cube or a tetrahedron based off input <br/>
+                            &#x2022; The scale and colour of the objects could also be altered based off console input <br/>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="web-section" id="Contact">
+                <div class="Contact-title">Contact</div>
+                <div class="contact-section">
+                    <div>
+                        Phone Number: 000000000
+                    </div>
+                    <div>
+                        Email: janmart.tenedora@gmail.com
+                    </div> 
+                    <div class="link">
+                        Linkedin:
+                    </div>
+                    <a href="url" class="linkedin-url">
+                        linkedin.com/in/janmart-tenedora-145983117
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

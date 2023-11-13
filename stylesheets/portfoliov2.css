@@ -1,0 +1,92 @@
+* {
+    font-family: 'Raleway';
+}
+
+body {
+    background-image: url("bgv2.webp");
+    height:900px
+}
+.webdiv{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.left, .middle, .right {
+    border: solid;
+    vertical-align: middle;
+    border-color: red;
+    height: 900px;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    
+}
+
+.right > div, .left > div {
+    border: solid;
+    height: 400px;
+   
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    max-width: 70%;
+    max-height: 70%;
+    
+
+}
+
+.work , .project{
+    display: none;
+    font-size: 20px;
+}
+
+
+.skills {
+    border: solid;
+    
+    
+}
+
+.description {
+    font-size: 20px;
+}
+
+.skills > div{
+    border: solid;
+    box-shadow: 10px 10px 10px grey;
+    display: inline-block;
+    font-size: 40px;
+}
+
+.description, .skill-section {
+    text-align: center;
+    margin-top: 50px;
+}
+.name, .projects-title,  .work-title, .skills-title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+   
+}
+
+.work-title {
+    text-align: center;
+}
+
+.work-bar > div, .projects-bar > div{
+    display: inline-block;
+    box-shadow: 2px 2px 4px grey;
+    font-size: 40px;
+    margin-right: 10px;
+}
+

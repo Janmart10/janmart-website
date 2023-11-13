@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/portfoliov2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script>
+        function onMouseOver(idType, section) {
+            var jobs;
+            if (section == "work") {
+                jobs = document.getElementsByClassName("work");
+            }
+            else if (section == "project") {
+                jobs = document.getElementsByClassName("project");
+
+
+            }
+
+
+            for (i = 0; i < jobs.length; i++) {
+                jobs[i].style.display = "none";
+            }
+            document.getElementById(idType).style.display = "block";
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="webdiv">
+        <div class="left">
+
+            <div style class="skill-section">
+                <div class="skills-title">Skills</div>
+                <div class="skills" id="skill-test">
+
+                    <div>C++</div>
+                    <div>HTML</div>
+                    <div>XML</div>
+                    <div>CSS</div>
+                    <div>Java</div>
+                    <div>Javascript</div>
+                    <div>Unix</div>
+                    <div>Unreal Engine</div>
+                    <div>OpenGl</div>
+                    
+                    
+                </div>
+
+            </div>
+            <div style="border:solid" class="work-section">
+                <div class="work-title">Work Experience</div>
+                <div class="work-bar">
+                    <div class="work-tab" onmouseover="onMouseOver('IT Consultant', 'work')">IT Consultant</div>
+                    <div class="work-tab" onmouseover="onMouseOver('Programming Intern', 'work')">Programming
+                        Intern</div>
+                    <div class="work-tab" onmouseover="onMouseOver('Project Management Intern', 'work')">Project
+                        Management
+                        Intern</div>
+                    <div class="work-tab" onmouseover="onMouseOver('Letter Sorter', 'work')">Letter Sorter</div>
+                </div>
+                <div class="work-desc">
+                    <div class="work" id="IT Consultant">
+                        &#x2022;Tested, deployed and documented proprietary software of Murex <br />
+                        &#x2022; Presentation of company interfaces and software to stakeholders <br />
+                        &#x2022; Designed automated workflows to process upstream <br /> and downstream information of
+                        client systems
+                    </div>
+                    <div class="work" id="Programming Intern">
+                        &#x2022; Identified and solved GUI issues of application through debugging and modification of
+                        application code <br />
+                        &#x2022; Completed issues earlier than assigned deadline through time management and co-ordination
+                        with programming
+                        supervisor
+                    </div>
+                    <div class="work" id="Project Management Intern">
+                        &#x2022; Ensured clients were satisfied through meetings with project stakeholders and consistent
+                        <br /> project updates using
+                        technical documents and visual presentations
+                        &#x2022; Completed project milestones within allocated time frame, utilizing project management
+                        tools such as a Gantts
+                        Chart <br />
+                        &#x2022; Reduced project risks and ensured safety of project team through Project Risk Assessment
+                        forms
+    
+                    </div>
+                    <div class="work" id="Letter Sorter">
+                        &#x2022; Managed and sorted high priority letters and packages to ensure successful delivery of
+                        items to customers
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+        <div class="middle">
+
+            <img src="imgs/Profile picture.jpg" class="profile-pic">
+        </div>
+        <div class="right">
+            <div class="description">
+                <div class="name">Janmart Tenedora</div>
+                <div class="description-about">Mechanical and Mechatronics Engineering Graduate with a passion for programming and software
+                    projects.
+                    I have experience working at various companies raning from start up Web application companies such
+                    as Thinkun,
+                    to larger organisations such as Murex, that focus on developing software for the major banks. </div>
+            </div>
+            <div class="project-section">
+                <div class="projects-title">Projects</div>
+                <div class="projects-bar">
+                    <div class="project-tab" onmouseover="onMouseOver('Search and Rescue Robot', 'project')">Search
+                        and Rescue Robot</div>
+                    <div class="project-tab" onmouseover="onMouseOver('CV Website', 'project')">CV Website</div>
+                    <div class="project-tab" onmouseover="onMouseOver('Wheelchair Simulation', 'project')">Wheelchair
+                        Simulation</div>
+                    <div class="project-tab" onmouseover="onMouseOver('3D Object Renderer', 'project')">3D Object
+                        Renderer</div>
+                </div>
+                <div class="project-description">
+                    <div class="project" id="Search and Rescue Robot">
+                        Programmed pre-built robot to navigate and explore maze  Developed the navigation system of a
+                        robot using the C programming
+                        language and interfacing with the robot’s interface  Co-ordinated with team members and reached
+                        3rd place in the competition
+                    </div>
+                    <div class="project" id="CV Website">
+                        Created
+                    </div>
+                    <div class="project" id="Wheelchair Simulation">
+                        Implemented a wheelchair interface into CARLA (Car Simulation)
+                        Created a pipeline between CARLA and ROS allowing the collection of real-time data
+
+                    </div>
+                    <div class="project" id="3D Object Renderer">
+                        Developed a multi-threaded program which, could render 3D objects such as a cube or a
+                        tetrahedron based off input
+                        The scale and colour of the objects could also be altered based off console input
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
