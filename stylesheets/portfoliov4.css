@@ -7,6 +7,10 @@ body {
     /* background-image: linear-gradient(to bottom right, #2f2fa2, #050538); */
 }
 
+.p, div {
+    font-family: "Verdana";
+}
+
 p {
     font-size: 100px;
 }
@@ -113,7 +117,7 @@ p {
 .work-tab{
     
   
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 5%;
     transition: color 0.5s;
     
@@ -124,7 +128,7 @@ p {
     color: #DF6C4F;
 }
  .work-desc {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 200%;
     
     height: 600px;
@@ -230,7 +234,7 @@ img:not(.profile-pic) {
 
 .project-desc{
     font-size: 25px;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .contact-section {
